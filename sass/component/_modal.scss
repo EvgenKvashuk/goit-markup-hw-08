@@ -1,0 +1,364 @@
+.bacckdrop {
+    position: fixed;
+    z-index: 100;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+
+    opacity: 1;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address {
+    gap: 50px;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 40px;
+
+    width: 528px;
+    height: 581px;
+
+    background-color: #FFFFFF;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.modal-form-field {
+    margin-bottom: 10px;
+}
+
+.close-modal {
+    cursor: pointer;
+
+    padding: 0;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+
+    width: 30px;
+    height: 30px;
+
+    position: absolute;
+
+    right: 8px;
+    top: 8px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.index::after {
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 44px;
+
+    width: 100%;
+    height: 4px;
+
+    background-color: var(--accent);
+    border-radius: 2px;
+}
+
+.portfolio::after {
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 44px;
+
+    width: 100%;
+    height: 4px;
+
+    background-color: var(--accent);
+    border-radius: 2px;
+}
+
+.bacckdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+
+.close-modal:hover,
+.close-modal:focus {
+    fill: var(--accent);
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-titel {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+    margin-bottom: 12px;
+}
+
+.modal-form-input {
+    cursor: pointer;
+
+    width: 100%;
+    height: 40px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    padding-left: 42px;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modalform-label-name {
+    display: block;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--secondary-text-color);
+    margin-bottom: 4px;
+}
+
+
+.footer-form-wrapper {
+    display: block;
+    /* margin-left: 93px; */
+}
+
+.footer-form-titel {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.footer-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-form-input {
+    padding-left: 16px;
+
+    width: 358px;
+    height: 50px;
+
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+
+.footer-form-field-button {
+    cursor: pointer;
+
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+    height: 50px;
+
+    padding: 10px 0;
+
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    margin-left: 12px;
+}
+
+.form-button-icon {
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+
+.modal-input-wrapper {
+    position: relative;
+}
+
+
+
+.close-icon {
+    display: block;
+    width: 17px;
+    height: 17px;
+}
+
+.modal-form-massge {
+    cursor: pointer;
+    
+    display: block;
+
+    width: 100%;
+    height: 120px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    padding: 12px 16px;
+
+    outline: none;
+    resize: none;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-massge::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.1;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-form-massge:focus {
+    border-color: var(--accent);
+}
+
+
+.modal-label-icon {
+    position: absolute;
+
+    transition: fil 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    top: 50%;
+    left: 12px;
+    transform: translate(0, -50%);
+    display: block;
+    width: 18px;
+    height: 18px;
+}
+
+.modal-form-input:focus {
+    border-color: var(--accent);
+    outline: none;
+}
+
+.modal-form-input:focus+.modal-label-icon {
+    fill: var(--accent);
+}
+
+.modal-chek-desk::before {
+    display: block;
+
+    width: 16px;
+    height: 15px;
+
+    border: 1px solid #212121;
+    border-radius: 2px;
+
+    content: "";
+
+    cursor: pointer;
+
+    margin-right: 8px;
+}
+
+.modal-chek:checked+.modal-chek-desk::before {
+    padding: 4px 2px 3px 3px;
+    background: var(--accent);
+    background-image: url(../images/check.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.modal-chek:focus+.modal-chek-desk::before {
+    outline: 2px solid var(--accent);
+    border-color: var(--accent);
+}
+
+.modal-chek-desk {
+    margin-bottom: 30px;
+
+    justify-content: center;
+
+    display: flex;
+    align-items: center;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+
+    letter-spacing: 0.03em;
+
+    color: var(--secondary-text-color);
+}
+
+
+.police-link {
+    text-decoration: underline;
+}
+
+.police-link {
+    color: var(--accent);
+}
+
+.modal-form-field-massage {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.modal-button {
+    width: 200px;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 52px;
+
+    background: var(--accent);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+}
