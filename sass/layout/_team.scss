@@ -1,6 +1,3 @@
-.team {
-    padding: 60px 0;
-}
 
 .team-section-titel {
     font-size: 28px;
@@ -77,14 +74,26 @@
         color: var(--primary-text-color);
     }
 
+    .team-item {
+        width: 354px;
+    }
 
     .team-list {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
+
+    }
+}
+
+//=====================================================================================
+@media screen and (max-width: 1199px) {
+    .team-list {
+        gap: 30px;
     }
 
-    .team-item:not(:last-child) {
-        margin-right: 30px;
+    .team-section-titel {
+        margin-bottom: 30px;
     }
 }
 
@@ -100,11 +109,13 @@
     .team-section-titel {
         font-size: 36px;
         line-height: 42px;
+        margin-bottom: 50px;
     }
 
     .team-titel {
         font-weight: 500;
         color: var(--primary-text-color);
+        margin-bottom: 50px;
     }
 
 
@@ -115,6 +126,10 @@
 
     .team-item:not(:last-child) {
         margin-right: 30px;
+    }
+
+    .team-item {
+        width: 270px;
     }
 }
 
