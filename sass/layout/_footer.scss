@@ -125,6 +125,12 @@
 
   //=====================================================================================
   @media screen and (min-width: 768px) {
+
+    .mobile-menu-open {
+      display: none;
+    }
+
+
     .footer {
       padding: 0;
     }
@@ -172,6 +178,11 @@
       margin-left: 93px;
     }
   }
+
+
+
+
+
 
 
 
