@@ -591,6 +591,11 @@ body {
   border-top: 1px solid var(--border-hero);
   background-color: var(--acent-background-color);
   padding: 118px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-titel {
@@ -624,40 +629,19 @@ body {
   padding: 10px 24px;
 }
 
-.hero {
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-Img.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-Img.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 @media screen and (min-width: 480px) {
   .hero {
     max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-Img.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-Img.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
     padding: 118px 0;
     max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-Img.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-Img.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
   }
   .hero-titel {
     font-size: 26px;
@@ -674,13 +658,8 @@ body {
   .hero {
     padding: 200px 0;
     max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-Img.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-Img.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
   }
   .button.primary {
     padding: 10px 32px;
@@ -1067,13 +1046,13 @@ body {
   }
 }
 .button-filter {
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.6;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   background: var(--secondary-background-color);
   border: var(--secondary-background-color);
-  padding: 6px 22px;
   -webkit-transition-property: color, background-color, -webkit-box-shadow;
   transition-property: color, background-color, -webkit-box-shadow;
   transition-property: color, background-color, box-shadow;
@@ -1138,6 +1117,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
 }
 
 .card-portfolio {
@@ -1198,4 +1180,63 @@ body {
 .exampl-link:focus .overlay {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
+}
+
+@media screen and (min-width: 480px) {
+  .page-button {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .button-filter {
+    padding: 6px 22px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .button-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 15px;
+  }
+  .exampl-item {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio-example {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .exampl-item {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .button-filter {
+    padding: 6px 22px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button-filter {
+    padding: 6px 25px;
+  }
 }/*# sourceMappingURL=main.css.map */
