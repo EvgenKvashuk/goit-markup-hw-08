@@ -14,6 +14,12 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+.team-titel {
+    font-weight: 500;
+    color: var(--primary-text-color);
+    margin-bottom: 50px;
+}
+
 .card-team {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -112,11 +118,7 @@
         margin-bottom: 50px;
     }
 
-    .team-titel {
-        font-weight: 500;
-        color: var(--primary-text-color);
-        margin-bottom: 50px;
-    }
+
 
 
     .team-list {

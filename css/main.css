@@ -929,6 +929,12 @@ body {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+.team-titel {
+  font-weight: 500;
+  color: var(--primary-text-color);
+  margin-bottom: 50px;
+}
+
 .card-team {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -1023,11 +1029,6 @@ body {
   .team-section-titel {
     font-size: 36px;
     line-height: 42px;
-    margin-bottom: 50px;
-  }
-  .team-titel {
-    font-weight: 500;
-    color: var(--primary-text-color);
     margin-bottom: 50px;
   }
   .team-list {
@@ -1219,7 +1220,7 @@ body {
         flex-wrap: wrap;
   }
   .exampl-item {
-    width: 50%;
+    width: 354px;
   }
 }
 @media screen and (max-width: 1200px) {
