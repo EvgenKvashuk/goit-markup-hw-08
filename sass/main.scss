@@ -1,16 +1,21 @@
-@import "./base/common";
-@import "./base/reset";
-@import "./utils/variables";
-@import "./components/container";
-@import "./components/section";
-@import "./components/visually-hidden";
-@import "./layout/about";
-@import "./layout/advantages";
-@import "./layout/clients";
-@import "./layout/footer";
-@import "./layout/header";
-@import "./layout/hero";
-@import "./layout/modal-form";
-@import "./layout/projects";
-@import "./layout/team";
-@import "./layout/mobile-menu";
+@import './utils/veriables';
+@import './utils/placeholders';
+@import './utils/visually-hidden';
+
+@import './base/common';
+@import './base/section';
+@import './base/container';
+
+@import './components/backdrop';
+@import './components/modal-window';
+@import './components/modal-form' ;
+@import './components/mobile-menu';
+
+@import './layout/header';
+@import './layout/main_section';
+@import './layout/advanteges';
+@import './layout/what-are-we-doing';
+@import './layout/our-team';
+@import './layout/regular-customers';
+@import './layout/footer';
+@import './layout/portfolio';
