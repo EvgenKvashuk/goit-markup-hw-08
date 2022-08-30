@@ -1,216 +1,109 @@
-
-.team-section-titel {
-    font-size: 28px;
-    line-height: 33px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
+.team__title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.116;
+  text-align: center;
+  color: var(--primary-text-color);
 }
 
-.team-item {
-    text-align: center;
-    background-color: var(--white-color);
-    border-radius: 0px 0px 4px 4px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+.team__member-title {
+  padding-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
 }
 
-.team-titel {
-    font-weight: 500;
-    color: var(--primary-text-color);
-    margin-bottom: 50px;
+.team__descprition {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
 }
 
-.card-team {
-    padding-top: 30px;
-    padding-bottom: 30px;
+@media screen and (min-width: 1200px) {
+  .team__list {
+    display: flex;
+  }
 }
-
-.card-team p {
-    margin-top: 10px;
-}
-
 
 .social-list {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 30px;
 }
 
-.social-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.social-list-link {
+  transition-property: fill, background-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
 
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--background-color);
 
-    background-color: #FFFFFF;
-
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
-.social-link:hover,
-.social-link:focus {
-    background-color: var(--accent);
+.social-list-icon {
+  fill: var(--icon-color);
+
+  .social-list-link:hover &,
+  .social-list-link:focus & {
+    fill: var(--background-color);
+  }
 }
 
-.social-icon {
-    fill: #AFB1B8;
-    width: 20px;
-    height: 20px;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.team {
+  background-color: #f5f4fa;
 }
 
-//=====================================================================================
-@media screen and (min-width: 480px) {}
-
-//=====================================================================================
-@media screen and (min-width: 768px) {
-    .team {
-        background-color: var(--secondary-background-color);
-        font-size: 16px;
-        line-height: 1.2;
-        letter-spacing: 0.03em;
-    }
-
-    .team-titel {
-        font-weight: 500;
-        color: var(--primary-text-color);
-    }
-
-    .team-item {
-        width: 354px;
-    }
-
-    .team-list {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-
-    }
+.team__list > .team__list-item {
+  background-color: var(--background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
-//=====================================================================================
-@media screen and (max-width: 1199px) {
-    .team-list {
-        gap: 30px;
-    }
-
-    .team-section-titel {
-        margin-bottom: 30px;
-    }
+.list-item-icon {
+  display: flex;
+  align-content: center;
 }
 
-//=====================================================================================
 @media screen and (min-width: 1200px) {
-    .team {
-        background-color: var(--secondary-background-color);
-        font-size: 16px;
-        line-height: 1.2;
-        letter-spacing: 0.03em;
+  .team__list-item {
+    &:nth-child(-n + 4) {
+      margin-right: 30px;
     }
 
-    .team-section-titel {
-        font-size: 36px;
-        line-height: 42px;
-        margin-bottom: 50px;
+    &:last-child {
+      margin-right: 0;
     }
-
-
-
-
-    .team-list {
-        display: flex;
-        align-items: center;
-    }
-
-    .team-item:not(:last-child) {
-        margin-right: 30px;
-    }
-
-    .team-item {
-        width: 270px;
-    }
+  }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team__list-item {
+    width: calc((100% - 4 * 15px) / 2);
+  }
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
 
-
-
-
-
-
-
-// .team {
-//     background-color: var(--secondary-background-color);
-//     font-size: 16px;
-//     line-height: 1.2;
-//     letter-spacing: 0.03em;
-
-// }
-
-// .team-titel {
-//     font-weight: 500;
-//     color: var(--primary-text-color);
-// }
-
-
-// .team-list {
-//     display: flex;
-//     align-items: center;
-// }
-
-// .team-item:not(:last-child) {
-//     margin-right: 30px;
-// }
-
-// .team-item {
-//     text-align: center;
-//     background-color: var(--white-color);
-//     border-radius: 0px 0px 4px 4px;
-//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-// }
-
-// .card-team {
-//     padding-top: 30px;
-//     padding-bottom: 30px;
-// }
-
-// .card-team p {
-//     margin-top: 10px;
-// }
-
-
-// .social-list {
-//     display: flex;
-//     justify-content: center;
-//     gap: 10px;
-//     margin-top: 16px;
-// }
-
-// .social-link {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-
-//     width: 44px;
-//     height: 44px;
-//     border-radius: 50%;
-
-//     background-color: #FFFFFF;
-
-//     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-// }
-
-// .social-link:hover,
-// .social-link:focus {
-//     background-color: var(--accent);
-// }
-
-// .social-icon {
-//     fill: #AFB1B8;
-//     width: 20px;
-//     height: 20px;
-//     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-// }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .team__list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
